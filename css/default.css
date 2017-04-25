@@ -1,0 +1,12 @@
+body {
+	position: relative;
+	/* Clip the left/right edges of the content inside the <div> element - 
+	if it overflows the element's content area (avoid scrolling from left to right) */
+	overflow-x: hidden;
+}
+.row {
+	margin: 0;
+}
+.for-mobile {
+	display: none;
+}

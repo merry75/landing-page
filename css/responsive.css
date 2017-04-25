@@ -1,0 +1,220 @@
+/* media queries */
+
+/* for tablet */
+@media (max-width: 1200px) {
+	.for-desktop {
+		display: none;
+	}
+	.for-mobile {
+		display: block;
+	}
+	.back-container {
+		display: block;
+		margin: 0;
+		position: relative;
+		z-index: 2;
+	}
+	.left-container {
+		height: 450px;
+		background-image: url('../img/Tablet_Background.jpg');
+	}
+	.left-container, .right-container {
+		width: 100%;
+	}
+	.right-container {
+		padding: 100px 0;
+		padding-bottom: 80px;
+		transform: skewY(-5deg);
+		margin-top: -50px;
+		margin-left: 0;
+    	margin-right: 0;
+	}
+	.right-container.hasError {
+		padding-bottom: 120px;
+	}
+	.bet-container {
+	    width: 60%;
+	    margin: auto;
+	    margin-right: 0;
+	    padding-left: 0;
+	    max-width: initial;
+	    transform: skewY(5deg) skewX(-5deg);
+	    position: relative;
+	}
+	.title-tablet-mobile {
+		display: inline-block;
+		font-size: 74px;
+		line-height: 65px;
+		font-family: BreuerHeadline;
+		background: -webkit-linear-gradient(left, #184e76, #2f8bb8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+	}
+	.title {
+		display: none;
+	}
+	.img-container {
+	    width: 50%;
+	    position: absolute;
+	    transform: skewX(5deg);
+	    right: 110%;
+	    left: initial;
+	    top: 60px;
+	}
+	.button-container {
+		margin: 0;
+		position: relative;
+		z-index: 1;
+		padding: 150px 100px 30px 100px;
+    	margin-top: -50px;
+    	background: -webkit-linear-gradient(left, #184e76 , #2f8bb8); /* For Safari 5.1 to 6.0 */
+	  	background: -o-linear-gradient(right, #184e76, #2f8bb8); /* For Opera 11.1 to 12.0 */
+	  	background: -moz-linear-gradient(right, #184e76, #2f8bb8); /* For Firefox 3.6 to 15 */
+	  	background: linear-gradient(to right, #184e76 , #2f8bb8); /* Standard syntax */
+	}
+	.step {
+		width: 100%;
+		background: none !important;
+		text-align: left;
+	}
+	.step:before {
+		display: none;
+	}
+	.circle-number {
+		 padding: 1px 5px;
+	}
+	.step .caption {
+		line-height: 30px;
+		max-width: initial;
+	}
+	.step.step1 .caption {
+		max-width: initial;
+	}
+	.registerForm {
+		position: absolute;
+	}
+	.registerForm input {
+		width: 80%;
+	}
+	.registerForm button {
+		width: 100%;
+		font-size: 41px;
+    	padding: 3px 3px;
+	}
+	.registerForm button:hover {
+		width: 100%;
+		padding: 15px 15px;
+	}
+	.menu a, .menu a:hover {
+		color: white;
+		font-size: 12px;
+		text-decoration: underline;
+	}
+	.message {
+		width: 80%;
+	    text-align: center;
+	    font-size: 13px;
+	    color: #184e76;
+	}
+	.message2 {
+		color: white;
+		display: none;
+	}
+}
+
+/* for mobile */
+@media (max-width: 450px) {
+	.left-container {
+		height: 270px;
+		background-image: url('../img/Mobile_Background.jpg');
+	}
+	.registerForm {
+		margin-top: -10px;
+	    width: 100%;
+	}
+	.registerForm button:hover {
+		width: 100%;
+		padding: 3px 3px;
+	}
+	.bet-container {
+    	width: 80%;
+	    margin: auto;
+	    transform: skewY(5deg);
+	    text-align: center;
+	}
+	.title-tablet-mobile {
+		display: inline-block;
+		font-size: 74px;
+		line-height: 65px;
+		font-family: BreuerHeadline;
+		background: -webkit-linear-gradient(left, #184e76, #2f8bb8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+	}
+	.title {
+		display: none;
+	}
+	.img-container {
+	    width: 40%;
+	    position: absolute;
+	    transform: skewX(0deg) translateX(-50%);
+	    left: 50%;
+	    top: -170px;
+	}
+	.offer, .title, .time, .description, .registerForm button {
+		transform: skewX(-5deg);
+	}
+	.offer {
+	    font-size: 14px;
+	    line-height: 15px;
+	}
+	.title {
+	    font-size: 45px;
+	    line-height: 37px;
+	}
+	.time {
+	    font-size: 33px;
+	    line-height: 30px;
+	}
+	.description {
+	    font-size: 17px;
+	    line-height: 18px;
+	}
+	.registerForm button {
+	    font-size: 27px;
+	    width: 90%;
+	}
+	.registerForm input {
+		margin: 0;
+	}
+	.button-container {
+		padding: 100px 30px 30px 30px;
+	}
+	.step {
+		font-size: 14px;
+	}
+	.step .caption {
+	    line-height: 17px;
+	}
+	.step .caption a, .step .caption a:hover {
+		color: #ffcd00;
+		text-decoration: underline;
+		width: 100%;
+    	display: inline-block;
+	}
+	.footer .footer-title, .footer .content {
+	    padding: 0 20px;
+	}
+	.right-container {
+	    padding-bottom: 40px;
+	}
+	.right-container.hasError {
+	    padding-bottom: 80px;
+	}
+	.message2 {
+		display: block;
+	}
+	.message1 {
+		display: none;
+	}
+}

@@ -1,0 +1,250 @@
+/* header Style */
+.header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999999;
+	padding: 15px;
+	font-family: LatoLatin;
+	font-weight: normal;
+}
+.logo img{
+	width: 140px;
+}
+.menu a, .menu a:hover {
+	color: #414943;
+	font-size: 10px;
+	text-decoration: underline;
+}
+
+
+/* main container Style */
+.back-container {
+	display: flex;
+}
+.left-container {
+	background-image: url('../img/Background.jpg');
+	/* set the size of the background image; Scale the background image to be as large as possible so that the background area is completely covered 
+	by the background image. Some parts of the background image may not be in view within the background positioning area */
+	background-size: cover;
+	/* how to position a background image */
+	background-position: center;
+	/* the background image will not be repeated*/
+	background-repeat: no-repeat;
+	position: relative;
+}
+.right-container {
+	padding: 150px 0 200px 0;
+	/* transform allows you to skew an element along the x axis by a given angle, rotate elements */
+	transform: skewX(-8deg);
+	margin-left: -50px;
+	margin-right: -50px;
+	width: calc(66.66% + 100px);
+	background: -webkit-linear-gradient(left, #d2d2d2 , #ffffff); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #d2d2d2, #ffffff); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #d2d2d2, #ffffff); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right, #d2d2d2 , #ffffff); /* Standard syntax */
+}
+.bet-container {
+	max-width: 550px;
+	margin: auto;
+	padding-left: 110px;
+}
+.img-container {
+    width: 60%;
+    position: absolute;
+    /* The translate method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis). */
+    transform: skewX(5deg) translateX(-50%);
+    left: 0;
+    top: 150px;
+}
+.img-container img {
+	width: 100%;
+}
+.offer, .description {
+	background: -webkit-linear-gradient(left, #184e76 , #2f8bb8); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #184e76, #2f8bb8); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #184e76, #2f8bb8); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right, #184e76 , #2f8bb8); /* Standard syntax */
+}
+.offer {
+	padding: 8px 12px 8px 12px;
+	color: white;
+	font-size: 26px;
+	line-height: 26px;
+	display: inline-block;
+	font-weight: bold;
+}
+.title {
+	font-size: 74px;
+	line-height: 65px;
+	font-family: BreuerHeadline;
+	background: -webkit-linear-gradient(left, #184e76, #2f8bb8);
+	/* text that appears cut out, such that you can see a background behind it 
+	This is a non-standardized property, but it was invented to do just this. 
+	The beauty is that you can pair it with -webkit-text-fill-color: transparent; 
+	so that you're only "hiding" the text in a browser that can do the clipping.*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title-tablet-mobile {
+	display: none;
+}
+.time{
+	font-size: 42px;
+	line-height: 35px;
+	font-family: BreuerHeadline;
+	background: -webkit-linear-gradient(left, #184e76, #2f8bb8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.description {
+	font-size: 20px;
+	line-height: 22px;
+	color: white;
+	padding: 8px;
+	font-family: BreuerText;
+	display: inline-block;
+}
+.description .bet-title {
+	font-family: LatoLatin;
+	font-weight: normal;
+}
+.description .available {
+	font-size: 16px;
+}
+.status {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+    left: 0;
+    text-align: right;
+    padding-right: 50px;
+    font-size: 7px;
+    color: #376587;
+}
+
+
+/* email Form Style */
+.registerForm {
+	position: absolute;
+}
+.registerForm input {
+	background: -webkit-linear-gradient(#d2d2d2, #ffffff);
+	border: 1px solid #c6c6c6;
+	padding: 3px 5px;
+	margin-bottom: 10px;
+}
+.registerForm button {
+	background-color: #61c900;
+	border: none;
+	color: white;
+	font-size: 26px;
+	padding: 2px 15px 5px 4px;
+	font-family: BreuerText;
+	font-style: italic;
+	/* CSS3 transitions allows you to change property values smoothly (from one value 
+	to another), over a given duration.*/
+	transition: all 5s;
+	width: 100%;
+}
+.registerForm button:hover {
+	width: calc(100% + 30px);
+	padding: 25px 3px;
+}
+.error {
+	color: red;
+	margin: 0;
+	display: none;
+}
+
+
+/* step container Style */
+.step {
+	position: relative;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	padding: 8px;
+	font-family: LatoLatin;
+	font-weight: bold;
+}
+.step:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 25px solid white;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	left: 100%;
+	top: 0;
+}
+.step1 {
+	background: #184e76;
+	z-index: 3;
+}
+.step1:before {
+	border-left-color: #184e76;
+}
+.step2 {
+	background: #236b96;
+	z-index: 2;
+}
+.step2:before {
+	border-left-color: #236b96;
+}
+.step3 {
+	background: #2f8bb8;
+	z-index: 1;
+}
+.circle-number {
+	border: 2px solid #ffcd00;
+	border-radius: 50%;
+	color: #ffcd00;
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+	line-height: 27px;
+}
+/* .step > div will only select the div that are nested directly inside the step class and not those that are nested further within !!!*/
+.step > div {
+	display: inline-flex;
+}
+.step p {
+	margin: 0;
+	text-transform: uppercase;
+}
+.step .caption {
+	text-align: left;
+	margin-left: 10px;
+	max-width: 230px;
+}
+.step .caption a, .step .caption a:hover {
+	color: white;
+	text-decoration: none;
+}
+.step.step1 .caption {
+	max-width: 150px;
+}
+
+
+/* footer Style */
+.footer {
+	background: #054179;
+	padding: 10px 0;
+	font-family: LatoLatin;
+	font-weight: normal;
+}
+.footer .footer-title, .footer .content {
+	font-size: 9px;
+	line-height: 15px;
+	color: #8eabc1;
+	text-align: center;
+	padding: 0 50px;
+}
+.footer-title p{
+	cursor: pointer;
+}
